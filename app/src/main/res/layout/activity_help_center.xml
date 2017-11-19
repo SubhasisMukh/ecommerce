@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#e7e7e7"
+    android:orientation="vertical"
     tools:context="com.example.rajarshi.herb_o_cure.Help_center">
-
 
 
     <android.support.design.widget.AppBarLayout
@@ -22,85 +20,76 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <ImageView
-            android:layout_margin="10dp"
-            android:src="@drawable/new_logo"
-            android:layout_weight="2"
             android:layout_width="match_parent"
-            android:layout_height="0dp" />
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:src="@drawable/new_logo" />
+
 
         <TextView
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:text="Contact No - 1234567890"
             android:layout_width="match_parent"
-            android:layout_height="0dp" />
-        <TextView
-            android:layout_margin="10dp"
-            android:gravity="center"
+            android:layout_height="0dp"
             android:layout_gravity="center"
+            android:layout_margin="10dp"
             android:layout_weight="2"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="20sp"
+            android:gravity="center"
             android:text="Rhine Razzak Plaza, Moghbazar Crossing 3rd Floor, Dhaka-1217, Bangladesh"
-            android:layout_width="match_parent"
-            android:layout_height="0dp" />
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
         <TextView
-            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:gravity="center"
-            android:layout_gravity="center"
             android:layout_weight="1"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="20sp"
+            android:elevation="5dp"
+            android:gravity="center"
             android:text="Other Details"
-            android:layout_width="match_parent"
-            android:layout_height="0dp" />
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:layout_weight="1"
+            android:autoLink="phone"
+            android:background="@drawable/back_white"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:gravity="center"
             android:onClick="Dialer_Invoked"
-            android:elevation="5dp"
-            android:background="@drawable/back_white"
-            android:autoLink="phone"
-            android:clickable="true"
-            android:layout_margin="40dp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="20sp"
             android:text="Call us Now from here"
-            android:layout_width="match_parent"
-            android:layout_height="0dp" />
-        <TextView
-            android:onClick="Email_invoke"
-            android:elevation="5dp"
-            android:background="@drawable/back_white"
-            android:autoLink="phone"
-            android:clickable="true"
-            android:layout_margin="40dp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:layout_weight="1"
             android:textColor="#000000"
-            android:textStyle="bold"
             android:textSize="20sp"
-            android:text="Mail us now from here"
+            android:textStyle="bold" />
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="0dp" />
-
-
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:layout_weight="1"
+            android:autoLink="phone"
+            android:background="@drawable/back_white"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:onClick="Email_invoke"
+            android:text="Mail us now from here"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
