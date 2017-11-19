@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rajarshi.herb_o_cure">
+
+    <!-- <uses-feature android:name="android.hardware.screen.portrait"></uses-feature> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mhc_icons"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/mhc_icons"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash_Screen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Congrats_Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Product_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".My_Orders"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Forget_pass_activity" />
+        <activity android:name=".About_us" />
+        <activity android:name=".My_account" />
+        <activity android:name=".Faq" />
+        <activity android:name=".Product_list" />
+        <activity android:name=".Product_details" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Help_center" />
+        <activity android:name=".Search_result_activity" />
+        <activity android:name=".Congrats_order_paced" />
+        <activity android:name=".My_cart_empty"></activity>
+    </application>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+</manifest>

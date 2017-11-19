@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_for_cartwithitem" />
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="79dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/product1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kanth Sudha"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40.00"
+            android:layout_below="@+id/textView2"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_alignBottom="@+id/imageView" />
+
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price "
+            android:layout_below="@+id/textView2"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_alignBottom="@+id/imageView" />
+
+        <TextView
+
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:id="@+id/qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="qty" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_margin="10dp"
+                android:onClick="ProceedToPaymentClicked"
+                android:id="@+id/button2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="?android:attr/colorActivatedHighlight"
+                android:text="Proceed Payment"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

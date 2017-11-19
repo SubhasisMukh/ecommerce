@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.rajarshi.herb_o_cure.Navigation_drawer_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:background="#ffffff"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:elevation="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/home_ico_nav" />
+
+        <TextView
+            android:paddingLeft="25dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:id="@+id/greetings_tv"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="Welcome "
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:elevation="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:padding="10dp"
+            android:src="@drawable/finallogo_mhc" />
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/listviewfragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:dividerHeight="2dp"
+        android:divider="#c7c7c7"/>
+
+</LinearLayout>

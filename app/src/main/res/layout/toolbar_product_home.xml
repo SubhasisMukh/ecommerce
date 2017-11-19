@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    android:fitsSystemWindows="true"
+    android:id="@+id/toolbar1"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:onClick="navbtnClicked"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:src="@drawable/navico" />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="Home"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+           <ImageButton
+               android:onClick="cartClicked"
+               android:layout_weight="1"
+               android:background="#00ffffff"
+               android:layout_width="0dp"
+               android:src="@drawable/cart_ico"
+               android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.Toolbar>

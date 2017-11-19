@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.rajarshi.herb_o_cure.Product_list">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarforproductlist"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:onClick="backbtnforProductListClicked"
+            android:layout_width="wrap_content"
+            android:src="@drawable/back_btn"
+            android:background="#00ffffff"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:text="Herb-&amp;-Cure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_for_product_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

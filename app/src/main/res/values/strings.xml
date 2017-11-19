@@ -1,0 +1,34 @@
+<resources>
+    <string-array name="quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="app_name">Herb-&amp;-Cure</string>
+    <string name="title_activity_product_home_navigation">Herb-&amp;-Cure</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="about_us">Modern Herbal Group Modern Herbal Group(MHG) is more than an income opportunity or a company or products. It’s about putting people in control of their lives. It’s about connecting people to others who respect them, who share their goals and aspirations. It’s about supporting people in their achievements.MHG is about people connecting people to a better way of life.MHG is one of the largest direct selling companies in Bangladesh. Operating in more than 64 Districts in Bangladesh today. Its products and services are marketed through independent business owners countrywide.PRODUCTS AND SERVICES
+Over 300+ unique, high-quality products carry the MHG name in the areas of Nutrition, Medicine, Weight Loss, Energy &amp; Fitness, Personal Care and a variety of services.
+MHG has been developing diverse products for human development for over three decades. Herbal, Unani, Ayurvedic, Homoeo medicines, Toiletries along with health conscious Food Products. We also fund many charitable organizations.
+COMMUNITY SERVICES
+MHG, its Independent Business Owners and employees are involved in improving the communities in which they do business. Specific and current information is available upon request.
+HOSPITALSIn 2004 the ground was broken for the first hospital in Bangladesh for alternative medicines. Our latest worthy contribution in alternative health care system is Maa General Hospital, Shariatpur, for an improvised rural village in need.
+Social Activities MHG is very active in social activities in the country and human development in general. The company funds several orphanages and various other charitable organisations.
+OUR STRONG COMMITMENTToward human development through alternative medicines &amp; herbal food supplement has been the driving force behind our present success.We believe in continuous improvement of our products through free exchange of ideas and knowledge before the best minds in our field.
+MHG has been developing diverse products for human development for over three decades. Herbal, Unani, Ayurvedic, Homoeo medicines, Toiletries along with health conscious Food Products. We also fund many charitable organizations.
+MHG began with the passion of one man, the noted herbalist, inventor and philanthropist: Dr. Alamgir Mati
+MODERN HERBAL GROUP
+Corporate Office
+
+Fax: 88-02-8314562
+
+</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

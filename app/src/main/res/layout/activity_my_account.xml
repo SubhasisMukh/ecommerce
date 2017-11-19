@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.rajarshi.herb_o_cure.My_account">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/toolbar_for_myaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:src="@drawable/panda_ico"
+        android:id="@+id/Customer_image"
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:elevation="10dp"/>
+
+
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:src="@drawable/pointer"
+                android:id="@+id/pointimage"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:elevation="10dp"/>
+
+            <Button
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:id="@+id/imageButton2"
+                android:elevation="10dp"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="2"
+                android:background="@drawable/background_orange"
+                android:onClick="detailsClicked"
+                android:text="See Your Details Here"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>

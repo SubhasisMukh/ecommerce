@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolBar1"
+                layout="@layout/toolbar_product_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_below="@+id/appBarLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:background="@drawable/grass_back_login"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5">
+                <TextView
+                    android:elevation="5dp"
+                    android:typeface="serif"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:text="Welcome To Herb-&amp;-Cure"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:background="#00e676"
+                android:elevation="5dp"
+                android:typeface="serif"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:text="Product Category"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+
+
+
+            <ScrollView
+                android:elevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="6"
+                android:layout_height="0dp"
+                android:fillViewport="true">
+
+                <ListView
+                    android:elevation="5dp"
+                    android:divider="#dcdcdc"
+                    android:dividerHeight="2dp"
+                    android:id="@+id/listviewofproducthome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </ListView>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <fragment
+        android:id="@+id/nav_drawer_fragment"
+        android:name="com.example.rajarshi.herb_o_cure.Navigation_drawer_fragment"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/navigation_drawer_fragment"
+        tools:layout="@layout/navigation_drawer_fragment" />
+
+</android.support.v4.widget.DrawerLayout>
