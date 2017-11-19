@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -21,149 +20,142 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_weight="6"
         android:layout_height="0dp"
+        android:layout_weight="6"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:elevation="10dp"
             android:gravity="center"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:id="@+id/textView3"
             android:text="Payment Options"
-            android:textSize="30sp"
             android:textColor="#a4000dff"
+            android:textSize="30sp"
             android:textStyle="bold|italic"
             android:typeface="serif" />
     </LinearLayout>
 
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_weight="6"
-            android:layout_height="0dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:src="@drawable/credit_card"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:src="@drawable/netbanking"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:src="@drawable/cod_ico"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-
-
-            </LinearLayout>
-
-            <RadioGroup
-                android:layout_weight="4"
-                android:layout_width="0dp"
-                android:layout_height="match_parent">
-
-                <RadioButton
-                    android:id="@+id/radioButton1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:background="#ffffff"
-                    android:elevation="5dp"
-                    android:onClick="myRadioButtonClick"
-                    android:text="Card"
-                    android:textStyle="italic" />
-
-                <RadioButton
-                    android:id="@+id/radioButton2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:background="#ffffff"
-                    android:elevation="5dp"
-                    android:onClick="myRadioButtonClick"
-                    android:text="Netbanking"
-                    android:textStyle="italic" />
-
-
-                <RadioButton
-                    android:id="@+id/radioButton4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:background="#ffffff"
-                    android:elevation="5dp"
-                    android:onClick="myRadioButtonClick"
-                    android:text="COD"
-                    android:textStyle="italic" />
-            </RadioGroup>
-        </LinearLayout>
-
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#ffffff">
+        android:layout_weight="6"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/buttons"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom"
-            android:elevation="5dp"
-            android:orientation="horizontal">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/imageButton2"
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/background_orange"
-                android:onClick="continueOfPaymentClicked"
-                android:text="Continue"
-                android:textColor="#000000"
-                android:textSize="15sp" />
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/credit_card" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/netbanking" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/cod_ico" />
+
+
         </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:elevation="5dp"
+                android:text="Card"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:elevation="5dp"
+                android:text="Netbanking"
+                android:textStyle="italic" />
+
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:elevation="5dp"
+                android:text="COD"
+                android:textStyle="italic" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_weight="2"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_orange"
+            android:onClick="continueOfPaymentClicked"
+            android:text="Continue"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
 
 </LinearLayout>
 

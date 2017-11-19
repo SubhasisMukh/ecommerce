@@ -14,22 +14,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:background="#9087fd58"
+        android:gravity="center_vertical"
         android:orientation="vertical">
 
-        <TextView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_margin="20dp"
-            android:background="@drawable/back_white"
             android:gravity="center"
+            android:src="@drawable/checked"
             android:text="Order Placed Successfully"
             android:textColor="#000000"
             android:textSize="30sp"
             android:textStyle="bold"
             android:typeface="serif" />
+
+
     </LinearLayout>
 
 
@@ -38,15 +41,16 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="#9087fd58"
+        android:gravity="center_vertical"
         android:orientation="vertical">
 
         <Button
-            android:onClick="continueShppingOfOrderpacedSuccesfullyClicked"
-            android:background="@drawable/background_orange"
-            android:layout_gravity="center"
-            android:gravity="center"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/background_orange"
+            android:gravity="center"
+            android:onClick="continueShppingOfOrderpacedSuccesfullyClicked"
             android:text="Continue Shopping" />
     </LinearLayout>
 

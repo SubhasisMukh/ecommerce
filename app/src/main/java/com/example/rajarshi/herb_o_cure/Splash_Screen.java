@@ -15,7 +15,7 @@ public class Splash_Screen extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    sleep(4000);
+                    sleep(3000);
                     Intent myintent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(myintent);
                     finish();
