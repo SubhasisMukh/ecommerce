@@ -32,7 +32,7 @@ public class Product_details extends AppCompatActivity {
             productimage.setImageResource(getIntent().getIntExtra("prodimage", 00));
             tv_for_product_name.setText(getIntent().getStringExtra("prodname"));
             tv_for_product_details.setText(getIntent().getStringExtra("proddes"));
-            tv_for_product_price.setText(getIntent().getStringExtra("prodprice"));
+            tv_for_product_price.setText("" + (getIntent().getIntExtra("prodprice", 00)));
 
 
         }

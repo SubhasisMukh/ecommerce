@@ -52,6 +52,7 @@ public class Product_list extends AppCompatActivity implements SearchView.OnQuer
                 arrayListtwo = Category_two.getData();
             } else if (productcategorytemp.equals("Natural Remedies")) {
                 setUpRecyclerViewforCat3();
+                arrayListthree = Category_three.getData();
 
             }
         }

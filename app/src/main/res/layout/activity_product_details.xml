@@ -5,8 +5,8 @@
     android:id="@+id/ll2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:visibility="visible"
     android:orientation="vertical"
+    android:visibility="visible"
     tools:context="com.example.rajarshi.herb_o_cure.MainActivity">
 
 
@@ -20,54 +20,52 @@
         android:layout_height="wrap_content" />
 
 
-
-
     <ImageView
-        android:layout_margin="10dp"
-        android:src="@drawable/new_logo"
         android:id="@+id/productimage"
         android:layout_width="match_parent"
-        android:layout_weight="2"
         android:layout_height="0dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_vertical"
-        android:elevation="10dp"/>
+        android:layout_margin="10dp"
+        android:layout_weight="2"
+        android:elevation="10dp"
+        android:src="@drawable/new_logo" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
         <TextView
-            android:textStyle="bold"
-            android:shadowColor="#636363"
-            android:typeface="serif"
-            android:layout_margin="10dp"
-            android:textColor="#000000"
-            android:textSize="20sp"
             android:id="@+id/product_nameof_deatils"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="Product Name"
+            android:layout_margin="10dp"
             android:layout_marginTop="29dp"
-            android:elevation="10dp"/>
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:shadowColor="#636363"
+            android:text="Product Name"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
 
         <TextView
-            android:typeface="serif"
-            android:layout_margin="10dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textColor="#000000"
-            android:textSize="15sp"
             android:id="@+id/product_details_of_product_details"
             android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
             android:layout_marginTop="34dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
             android:text="Product Details"
-            android:elevation="10dp" />
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:typeface="serif" />
 
 
         <LinearLayout
@@ -76,42 +74,44 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textStyle="bold"
-                android:typeface="serif"
-                android:layout_margin="10dp"
-                android:textColor="#000000"
-                android:textSize="20sp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginTop="29dp"
-                android:text="Product Price"
-                android:elevation="10dp" />
-            <TextView
-                android:typeface="serif"
                 android:layout_margin="10dp"
+                android:layout_marginTop="29dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:text="Product Price"
                 android:textColor="#000000"
                 android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
                 android:id="@+id/product_pricefor_product_details"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_margin="10dp"
                 android:layout_marginTop="29dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
                 android:text="Product Price"
-                android:elevation="10dp" />
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:typeface="serif" />
         </LinearLayout>
     </LinearLayout>
 
     <RelativeLayout
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_width="wrap_content">
+        android:layout_weight="1">
 
         <LinearLayout
             android:id="@+id/buttons"
             android:layout_width="match_parent"
-            android:layout_alignParentBottom="true"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_gravity="bottom"
             android:elevation="5dp"
             android:orientation="horizontal">
