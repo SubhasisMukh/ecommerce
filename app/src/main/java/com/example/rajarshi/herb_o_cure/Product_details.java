@@ -27,20 +27,15 @@ public class Product_details extends AppCompatActivity {
         tv_for_product_price = (TextView) findViewById(R.id.product_pricefor_product_details);
 
 
-//        Bundle bundle = getIntent().getExtras();
-//        if (bundle != null) {
-//
-//            String productcategorytemp = bundle.getString("ProductCategory");
-//
-//            if (productcategorytemp.equals("Ayurvedic Medicines")) {
-//
-//
-//            } else if (productcategorytemp.equals("Dietary Supplements")) {
-//
-//            } else if (productcategorytemp.equals("Natural Remedies")) {
-//
-//            }
-//        }
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            productimage.setImageResource(getIntent().getIntExtra("prodimage", 00));
+            tv_for_product_name.setText(getIntent().getStringExtra("prodname"));
+            tv_for_product_details.setText(getIntent().getStringExtra("proddes"));
+            tv_for_product_price.setText(getIntent().getStringExtra("prodprice"));
+
+
+        }
     }
 
 

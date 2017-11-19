@@ -128,7 +128,6 @@ public class Product_list extends AppCompatActivity implements SearchView.OnQuer
     }
 
 
-
     @Override
     public boolean onQueryTextSubmit(String query) {
         return false;
@@ -138,16 +137,14 @@ public class Product_list extends AppCompatActivity implements SearchView.OnQuer
     public boolean onQueryTextChange(String newText) {
 
 
-
-        Log.e("My tag  ",newText);
         newText = newText.toLowerCase();
         ArrayList<Category_one> newlist = new ArrayList<>();
 
         for (Category_one category_one : arrayList) {
             String name = category_one.getProduct_name().toString();
-            Log.e("My tag 2  ",name);
+
             if (name.toLowerCase().contains(newText)) {
-                Log.e("My tag 3  ",name);
+
                 newlist.add(category_one);
             }
         }
