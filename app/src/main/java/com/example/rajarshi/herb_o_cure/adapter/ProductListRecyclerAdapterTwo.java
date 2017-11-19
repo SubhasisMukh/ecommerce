@@ -14,6 +14,7 @@ import com.example.rajarshi.herb_o_cure.R;
 import com.example.rajarshi.herb_o_cure.product_model.Category_one;
 import com.example.rajarshi.herb_o_cure.product_model.Category_two;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,14 +22,14 @@ import java.util.List;
  */
 
 public class ProductListRecyclerAdapterTwo extends RecyclerView.Adapter<ProductListRecyclerAdapterTwo.MyViewHolder> {
-    private List<Category_two> mdata;
+    private List<Category_two> mdata = new ArrayList<>();
     private LayoutInflater mInflater;
     Context ctx;
 
     public ProductListRecyclerAdapterTwo(Context context, List<Category_two> data) {
         this.mdata = data;
         this.mInflater = LayoutInflater.from(context);
-        this.ctx=context;
+        this.ctx = context;
     }
 
 
@@ -51,7 +52,7 @@ public class ProductListRecyclerAdapterTwo extends RecyclerView.Adapter<ProductL
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView pro_name,pro_des,pro_price;
+        TextView pro_name, pro_des, pro_price;
         ImageView pro_image;
         int position;
         Category_two current;
@@ -70,9 +71,9 @@ public class ProductListRecyclerAdapterTwo extends RecyclerView.Adapter<ProductL
             this.pro_image.setImageResource(current.getImageID());
             this.pro_name.setText(current.getProduct_name());
             this.pro_des.setText(current.getDescription());
-            this.pro_price.setText(""+current.getProduct_price());
+            this.pro_price.setText("" + current.getProduct_price());
             this.position = position;
-            this.current=current;
+            this.current = current;
         }
 
         @Override
@@ -87,5 +88,16 @@ public class ProductListRecyclerAdapterTwo extends RecyclerView.Adapter<ProductL
             intent.putExtra("prodprice", cattwo.getProduct_price());
             ctx.startActivity(intent);
         }
+
+
     }
+
+    public void setFilter(ArrayList<Category_two> newarraylist) {
+        mdata = new ArrayList<>();
+        mdata.addAll(newarraylist);
+        notifyDataSetChanged();
+
+    }
+
+
 }

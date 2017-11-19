@@ -14,6 +14,7 @@ import com.example.rajarshi.herb_o_cure.R;
 import com.example.rajarshi.herb_o_cure.product_model.Category_three;
 import com.example.rajarshi.herb_o_cure.product_model.Category_two;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,7 +22,7 @@ import java.util.List;
  */
 
 public class ProductListRecyclerAdapterThree extends RecyclerView.Adapter<ProductListRecyclerAdapterThree.MyViewHolder> {
-    private List<Category_three> mdata;
+    private List<Category_three> mdata = new ArrayList<>();
     private LayoutInflater mInflater;
     Context ctx;
 
@@ -87,5 +88,12 @@ public class ProductListRecyclerAdapterThree extends RecyclerView.Adapter<Produc
             intent.putExtra("prodprice", catthree.getProduct_price());
             ctx.startActivity(intent);
         }
+    }
+
+    public void setFilter(ArrayList<Category_three> newarraylist) {
+        mdata = new ArrayList<>();
+        mdata.addAll(newarraylist);
+        notifyDataSetChanged();
+
     }
 }
