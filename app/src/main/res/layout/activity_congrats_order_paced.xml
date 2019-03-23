@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/about_us_back"
+    android:background="@drawable/congrats_background"
     android:orientation="vertical"
     tools:context="com.example.rajarshi.herb_o_cure.Congrats_order_paced">
 
@@ -15,7 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:background="#9087fd58"
         android:gravity="center_vertical"
         android:orientation="vertical">
 
@@ -25,7 +24,7 @@
             android:layout_gravity="center_vertical"
             android:layout_margin="20dp"
             android:gravity="center"
-            android:src="@drawable/checked"
+            android:src="@drawable/congrats"
             android:text="Order Placed Successfully"
             android:textColor="#000000"
             android:textSize="30sp"
@@ -40,7 +39,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#9087fd58"
         android:gravity="center_vertical"
         android:orientation="vertical">
 

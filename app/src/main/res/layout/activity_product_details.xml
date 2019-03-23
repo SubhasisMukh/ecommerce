@@ -30,7 +30,7 @@
         android:layout_margin="20dp"
         android:layout_weight="2"
         android:elevation="10dp"
-        android:src="@drawable/new_logo" />
+        android:src="@drawable/bibliohouse_logo" />
 
     <LinearLayout
         android:layout_width="match_parent"

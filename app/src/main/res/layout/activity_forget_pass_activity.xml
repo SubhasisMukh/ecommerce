@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grass_back_login"
+    android:background="@drawable/bibliohouse_forget_pass"
     android:orientation="vertical"
     tools:context="com.example.rajarshi.herb_o_cure.MainActivity">
 
@@ -76,17 +76,18 @@
 
         <Button
             android:id="@+id/pass_reset_submitClicked"
-            android:onClick="passResetClicked"
             android:layout_width="250dp"
             android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_margin="20dp"
-            android:layout_centerVertical="true"
+            android:layout_marginBottom="92dp"
             android:background="@drawable/back_red"
             android:elevation="20dp"
+            android:onClick="passResetClicked"
             android:text="Submit"
             android:textColor="#ffffff"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:ignore="OnClick" />
 
 
     </RelativeLayout>

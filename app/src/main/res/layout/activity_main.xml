@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grass_back_login"
+    android:background="#c5cae9"
     android:orientation="vertical"
     tools:context="com.example.rajarshi.herb_o_cure.MainActivity">
 

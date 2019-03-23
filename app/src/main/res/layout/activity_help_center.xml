@@ -29,7 +29,7 @@
             android:layout_height="0dp"
             android:layout_margin="10dp"
             android:layout_weight="2"
-            android:src="@drawable/new_logo" />
+            android:src="@drawable/bibliohouse_logo" />
 
 
         <TextView
@@ -39,7 +39,7 @@
             android:layout_margin="10dp"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="Rhine Razzak Plaza, Moghbazar Crossing 3rd Floor, Dhaka-1217, Bangladesh"
+            android:text="46A/10 Shibpur Road, Howrah-711102 West Bengal, India"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -69,7 +69,7 @@
             android:elevation="5dp"
             android:gravity="center"
             android:onClick="Dialer_Invoked"
-            android:text="Call us Now from here"
+            android:text="Call us from here"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -86,7 +86,7 @@
             android:elevation="5dp"
             android:gravity="center"
             android:onClick="Email_invoke"
-            android:text="Mail us now from here"
+            android:text="Mail us from here"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold" />

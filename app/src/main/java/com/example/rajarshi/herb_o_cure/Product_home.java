@@ -20,7 +20,7 @@ import android.widget.Toast;
 public class Product_home extends AppCompatActivity {
 
     //product category items
-    String[] product_cat_names = {"Ayurvedic Medicines", "Dietary Supplements", "Natural Remedies"};
+    String[] product_cat_names = {"Science and Technology", "Literature", "Management"};
 
     Context context;
     MySQLiteAdapter mySQLiteAdapter;
